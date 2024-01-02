@@ -1,5 +1,5 @@
 #page title
-page_title                                : Hörspieler                                # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title                                : PlayTales                                # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 
 # App Info
 ios_app_id                                : 6444850972                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
@@ -11,9 +11,9 @@ presskit_download_link                    :                                     
                                                                                       # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
 
 app_icon                                  : assets/appicon.png                        # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
-app_name                                  : Hörspieler                                # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_name                                  : PlayTales                                # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Hörspieler ist der perfekte Begleiter für kleine Hörspiel-Fans
+app_description                           : PlayTales is the perfect companion for little radio play fans
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
@@ -23,7 +23,7 @@ enable_smart_app_banner                   : true                                
 your_name                                 : Peter Kurzok
 your_link                                 : https://peterkurzok.de                     
 your_city                                 : Gersfeld                    
-email_address                             : hoerspieler@peterkurzok.de
+email_address                             : playtales@peterkurzok.de
 facebook_username                         :                                           
 instagram_username                        : filmaniac
 twitter_username                          : 
@@ -36,36 +36,36 @@ mastodon_link                             : https://kind.social/@filmaniac
 # Feature List                            Edit, add or remove features to be presented.
 features                                  :
 
-  - title                                 : Favoriten
-    description                           : Merke dir deine Lieblingshörspiele für einen schnellen Zugriff.
+  - title                                 : Favorites
+    description                           : Remember your favorite radio plays for quick access.
     fontawesome_icon_name                 : heart
 
-  - title                                 : Apple Music Anbindung
-    description                           : Greife auf den größten Streaming Katalog zu und spiele ALLE Hörspiele oder Musik im Angebot von Apple.
+  - title                                 : Apple Music Integration
+    description                           : Access the largest streaming catalog and play ALL radio plays or music on offer from Apple.
     fontawesome_icon_name                 : music
     
-  - title                                 : Sprachausgabe
-    description                           : Du kannst noch nicht Lesen? Kein Problem! Lasse dir die Titel von Interpreten und Folgen vorlesen.
+  - title                                 : Voice output
+    description                           : You can't read yet? No problem! Have the titles of artists and episodes read to you.
     fontawesome_icon_name                 : comment
 
-  - title                                 : Kinderleichte Bedienung
-    description                           : Große Bedienelemente, Auswahl der Alben mit Cover Flow oder Kachelansicht.
+  - title                                 : Easy to operate for kids
+    description                           : Large control elements, selection of albums with Cover Flow or tile view.
     fontawesome_icon_name                 : child
 
-  - title                                 : Zuletzt gehörte Alben speichern
-    description                           : Höre da weiter, wo du aufgehört hast.
+  - title                                 : Save recently listened albums
+    description                           : Pick up where you left off listening.
     fontawesome_icon_name                 : play-circle
   
-  - title                                 : AirPlay und Bluetooth Unterstützung
-    description                           : Du hast einen externen Lautsprecher? Großartig! Hörspieler spielt auch direkt auf die Ohren oder auf den großen Boxen.
+  - title                                 : AirPlay and Bluetooth Support
+    description                           : You have an external speaker? Great! PlayTales also plays directly to your ears or on the big speakers.
     fontawesome_icon_name                 : bullhorn
 
-  - title                                 : Elternbereich
-    description                           : Passe Hörspieler an die Bedürfnisse deiner Kleinen an. Z.B. durch Deaktivierung der Suchfunktion. Nur das Abspielen, was Eltern freigeben.
+  - title                                 : Parents area
+    description                           : Adapt PlayTales to the needs of your little ones. For example, by deactivating the search function. Only play what parents approve.
     fontawesome_icon_name                 : lock
 
-  - title                                 : Dark und Lightmode
-    description                           : Ob du tagsüber oder abends im Bett hörst, Hörspieler kleidet sich im passenden Gewandt.
+  - title                                 : Dark and Lightmode
+    description                           : Whether you listen during the day or in bed at night, PlayTales is dressed for the occasion.
     fontawesome_icon_name                 : lightbulb
 
 

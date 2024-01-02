@@ -1,0 +1,134 @@
+#page title
+page_title                                : Hörspieler                                # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+
+# App Info
+ios_app_id                                : 6444850972                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
+ios_app_country                           : us                                        # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+
+appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
+playstore_link                            :                                           # Enter Google Play Store URL.
+presskit_download_link                    :                                           # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
+                                                                                      # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
+
+app_icon                                  : assets/appicon.png                        # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
+app_name                                  : Hörspieler                                # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_description                           : Hörspieler ist der perfekte Begleiter für kleine Hörspiel-Fans
+
+enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
+
+
+
+# Information About Yourself
+your_name                                 : Peter Kurzok
+your_link                                 : https://peterkurzok.de                     
+your_city                                 : Gersfeld                    
+email_address                             : hoerspieler@peterkurzok.de
+facebook_username                         :                                           
+instagram_username                        : filmaniac
+twitter_username                          : 
+github_username                           : pkurzok
+youtube_username                          :
+mastodon_link                             : https://kind.social/@filmaniac
+
+
+
+# Feature List                            Edit, add or remove features to be presented.
+features                                  :
+
+  - title                                 : Favoriten
+    description                           : Merke dir deine Lieblingshörspiele für einen schnellen Zugriff.
+    fontawesome_icon_name                 : heart
+
+  - title                                 : Apple Music Anbindung
+    description                           : Greife auf den größten Streaming Katalog zu und spiele ALLE Hörspiele oder Musik im Angebot von Apple.
+    fontawesome_icon_name                 : music
+    
+  - title                                 : Sprachausgabe
+    description                           : Du kannst noch nicht Lesen? Kein Problem! Lasse dir die Titel von Interpreten und Folgen vorlesen.
+    fontawesome_icon_name                 : comment
+
+  - title                                 : Kinderleichte Bedienung
+    description                           : Große Bedienelemente, Auswahl der Alben mit Cover Flow oder Kachelansicht.
+    fontawesome_icon_name                 : child
+
+  - title                                 : Zuletzt gehörte Alben speichern
+    description                           : Höre da weiter, wo du aufgehört hast.
+    fontawesome_icon_name                 : play-circle
+  
+  - title                                 : AirPlay und Bluetooth Unterstützung
+    description                           : Du hast einen externen Lautsprecher? Großartig! Hörspieler spielt auch direkt auf die Ohren oder auf den großen Boxen.
+    fontawesome_icon_name                 : bullhorn
+
+  - title                                 : Elternbereich
+    description                           : Passe Hörspieler an die Bedürfnisse deiner Kleinen an. Z.B. durch Deaktivierung der Suchfunktion. Nur das Abspielen, was Eltern freigeben.
+    fontawesome_icon_name                 : lock
+
+  - title                                 : Dark und Lightmode
+    description                           : Ob du tagsüber oder abends im Bett hörst, Hörspieler kleidet sich im passenden Gewandt.
+    fontawesome_icon_name                 : lightbulb
+
+
+# Theme Settings
+topbar_color                              : "#000000"
+topbar_transparency                       : 0.1
+topbar_title_color                        : "#ffffff"
+
+cover_image                               : assets/headerimage.png                    # Replace with alternative image path or image URL.
+cover_overlay_color                       : "#363b3d"
+cover_overlay_transparency                : 0.25
+
+device_color                              : black                                     # Set to: blue, black, yellow, coral or white.
+
+body_background_color                     : "#ffffff"
+
+link_color                                : "#CA3943"
+
+app_title_color                           : "#ffffff"
+app_price_color                           : "#ffffff"
+app_description_color                     : "#ffffff"
+
+feature_title_color                       : "#000000"
+feature_text_color                        : "#666666"
+
+feature_icons_foreground_color            : "#ffffff"
+feature_icons_background_color            : "#CA3943"
+
+social_icons_foreground_color             : "#666666"
+social_icons_background_color             : "#e6e6e6"
+
+footer_text_color                         : "#666666"
+
+
+
+
+
+
+
+
+
+
+
+
+
+####################################################
+### Jekyll Configuration. No need to touch this. ###
+####################################################
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :compressed # You might prefer to minify using :compressed
+
+# Exclude these files from your production _site
+exclude:
+  - LICENSE
+  - README.md
+  - CNAME
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Markdown rendering
+markdown: kramdown

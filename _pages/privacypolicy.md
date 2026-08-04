@@ -262,11 +262,15 @@ to Google for speech output by selecting Apple speech output (section 5.5).
 
 * **Data stored on the device** is kept until you delete it in the app or remove the app.
 * **iCloud data** remains until you delete it or stop syncing.
-* **Crash reports** are deleted by Sentry once the retention period configured there expires; the
-  default is **90 days**.
-* **Usage statistics** are deleted by Mixpanel once the retention period configured for the project
-  expires.
+* **Crash reports** are kept only for as long as they are useful for debugging, then deleted
+  automatically by Sentry. The governing period is the retention period set on the Sentry project;
+  it is at most **90 days** from receipt of the report.
+* **Usage statistics** are kept only for as long as they are needed to compare usage across app
+  versions, then deleted automatically by Mixpanel. The governing period is the retention period
+  set on the Mixpanel project.
 * **Server logs** at Cloudflare and GitHub are deleted after the short periods applicable there.
+
+We will tell you the periods currently configured on request, at the address in section 1.
 
 After an objection, no further data is collected; data already transmitted is deleted once the
 respective period expires. On request we will arrange for earlier deletion — see section 10.
@@ -320,11 +324,11 @@ in particular in the Member State of your habitual residence, place of work, or 
 alleged infringement. The authority responsible for the controller is:
 
 ```
-Der Hessische Beauftragte für Datenschutz und Informationsfreiheit
-Postfach 3163
-65021 Wiesbaden
+Bayerisches Landesamt für Datenschutzaufsicht (BayLDA)
+Promenade 18
+91522 Ansbach
 Germany
-https://datenschutz.hessen.de
+https://www.lda.bayern.de
 ```
 
 ## 11. Data security

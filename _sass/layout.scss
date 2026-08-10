@@ -378,14 +378,18 @@ nav > ul li a:active {
 
 // iPhone Device Preview
 //
+// Keep this file ASCII-only, comments included. GitHub Pages pins jekyll-sass-converter 1.5.2,
+// i.e. Ruby Sass 3.7.4, which reads a partial as US-ASCII unless it declares @charset -- one
+// multiplication sign in a comment here failed a whole deploy.
+//
 // The bezel is the same art the App Store screenshots are framed with: the app repo's vendored
-// Tools/EasyFrame, "Apple iPhone 14 Pro Max Black.png", 1421×2909 with a transparent screen cutout.
-// It sits *on top* of the screenshot, so nothing has to be clipped to a notch shape — which is what
+// Tools/EasyFrame, "Apple iPhone 14 Pro Max Black.png", 1421x2909 with a transparent screen cutout.
+// It sits *on top* of the screenshot, so nothing has to be clipped to a notch shape -- which is what
 // the old iPhone X frame did, carving a notch through a status bar laid out for a Dynamic Island.
 //
 // The four screen percentages come from EasyFrame's own framing maths (FramedScreenshotView +
-// SupportedDevice): a 1290×2796 screenshot centred under a bezel drawn at offset (0, +2), corner
-// radius 35. That keeps the site and the store listing in agreement — if the bezel art or that
+// SupportedDevice): a 1290x2796 screenshot centred under a bezel drawn at offset (0, +2), corner
+// radius 35. That keeps the site and the store listing in agreement -- if the bezel art or that
 // layout changes, these numbers change with it.
 //
 //   left    65.5 / 1421   top      54.5 / 2909
@@ -395,7 +399,7 @@ nav > ul li a:active {
 	grid-area: p;
 	margin-top: 68px;
 
-	// Scaled so the rendered frame is the same height as the old one (392 × 2909/1421 ≈ 802px).
+	// Scaled so the rendered frame is the same height as the old one (392 * 2909/1421 = ~802px).
 	// The header row is pinned to 876px in `.container`, and 802 + the 68px margin just fits it.
 	--device-width: 392px;
 }

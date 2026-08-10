@@ -685,3 +685,29 @@ footer {
 .hidden {
 	display: none;
 }
+
+/* --- Press page ---------------------------------------------------------------
+ * Scoped under .markdown-body on purpose: github-markdown is imported after
+ * layout in main.scss, so a bare `.presskitDownload a` would lose the colour
+ * fight against `.markdown-body a`.
+ */
+
+.markdown-body .presskitDownload {
+	margin-top: 28px;
+	margin-bottom: 8px;
+}
+
+.markdown-body .presskitDownload a {
+	display: inline-block;
+	background-color: $accent-color;
+	color: #ffffff;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 14px 24px;
+	border-radius: 10px;
+}
+
+.markdown-body .presskitDownload a:hover {
+	opacity: 0.85;
+	text-decoration: none;
+}

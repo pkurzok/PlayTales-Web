@@ -377,96 +377,80 @@ nav > ul li a:active {
 
 
 // iPhone Device Preview
+//
+// The bezel is the same art the App Store screenshots are framed with: the app repo's vendored
+// Tools/EasyFrame, "Apple iPhone 14 Pro Max Black.png", 1421×2909 with a transparent screen cutout.
+// It sits *on top* of the screenshot, so nothing has to be clipped to a notch shape — which is what
+// the old iPhone X frame did, carving a notch through a status bar laid out for a Dynamic Island.
+//
+// The four screen percentages come from EasyFrame's own framing maths (FramedScreenshotView +
+// SupportedDevice): a 1290×2796 screenshot centred under a bezel drawn at offset (0, +2), corner
+// radius 35. That keeps the site and the store listing in agreement — if the bezel art or that
+// layout changes, these numbers change with it.
+//
+//   left    65.5 / 1421   top      54.5 / 2909
+//   width   1290 / 1421   height   2796 / 2909   radius  35 / 1421 of the frame's own width
 
 .iphonePreview {
 	grid-area: p;
-	background-image: url($device-color);
-	background-size: 400px auto;
-	background-repeat: no-repeat;
 	margin-top: 68px;
+
+	// Scaled so the rendered frame is the same height as the old one (392 × 2909/1421 ≈ 802px).
+	// The header row is pinned to 876px in `.container`, and 802 + the 68px margin just fits it.
+	--device-width: 392px;
 }
 
-.iphoneScreen {
-	width: 349px;
-	-webkit-clip-path: url(#screenMask);
-	clip-path: url(#screenMask);
-	margin-left: 26px;
-	margin-top: 23px;
+.deviceFrame {
+	position: relative;
+	width: var(--device-width);
+	aspect-ratio: 1421 / 2909;
 }
 
+.deviceBezel {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.iphoneScreen,
 .videoContainer {
-	width: 349px;
-	height: 755px;
-	-webkit-clip-path: url(#screenMask);
-	clip-path: url(#screenMask);
-	margin-left: 26px;
-	margin-top: 23px;
+	position: absolute;
+	left: 4.6094%;
+	top: 1.8735%;
+	width: 90.7811%;
+	height: 96.1155%;
+	border-radius: calc(var(--device-width) * 0.0246);
+	overflow: hidden;
+	object-fit: fill;
 }
 
 .videoContainer > video {
-	width: 349px;
-	height: 755px;
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
 }
 
 @media only screen and (max-width: 1070px) {
 
 	.iphonePreview {
-		background-size: 370px auto;
+		--device-width: 362px;
 	}
 
-	.iphoneScreen {
-		width: 322px;
-		margin-left: 24px;
-		margin-top: 22px;
-	}
-
-	.videoContainer {
-		width: 322px;
-		height: 698px;
-		margin-left: 24px;
-		margin-top: 22px;
-	}
-	
-	.videoContainer > video {
-		width: 322px;
-		height: 698px;
-	}
-	
-} 
+}
 
 @media only screen and (max-width: 992px) {
 
 	.iphonePreview {
+		--device-width: 254px;
 		display: flex;
-		background-size: 260px auto;
-		background-position: center 0;
-		margin-top: 47px;
 		justify-content: center;
+		margin-top: 47px;
 		padding-bottom: 75px;
 	}
 
-	.iphoneScreen {
-		width: 226px;
-		height: 488px;
-		-webkit-clip-path: url(#screenMask);
-		clip-path: url(#screenMask);
-		margin: 0px;
-		margin-top: 17px;
-	}
-
-	.videoContainer {
-		width: 226px;
-		height: 488px;
-		margin-left: 0px;
-		margin-top: 17px;
-	}
-
-	.videoContainer > video {
-		width: 226px;
-		height: 488px;
-	}
-	
-} 
+}
 
 
 // Feature List

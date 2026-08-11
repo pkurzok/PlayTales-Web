@@ -21,7 +21,9 @@ app_description                           : The audio play player for kids — A
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
 # Site metadata                           Used for <html lang>, canonical URLs and social-share cards.
-url                                       : https://playtales.peterkurzok.de           # Jekyll's own key — `absolute_url` needs it for og:image and canonical.
+url                                       : https://play-tales.app                     # Jekyll's own key — `absolute_url` needs it for og:image and canonical.
+                                                                                      # playtales.peterkurzok.de 301s here (Cloudflare redirect rule) and must stay
+                                                                                      # alive: every shipped 1.x build links to it from Settings ▸ Privacy.
 site_lang                                 : en
 og_locale                                 : en_US
 social_share_image                        : /assets/Promo.png                          # 2048×1024, safe for og:image and Twitter's summary_large_image.

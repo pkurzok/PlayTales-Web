@@ -6,7 +6,7 @@ catalogue. Big cover tiles instead of lists, titles read aloud for children who 
 read yet, a sleep timer, and offline playback for the road.
 
 This kit holds everything needed to cover the app. The current version always lives at
-https://playtales.peterkurzok.de/press/
+https://play-tales.app/press/
 
 
 AT A GLANCE
@@ -29,8 +29,8 @@ Age rating            4+
 App Store             https://apps.apple.com/us/app/id6444850972
 App Store ID          6444850972
 Bundle ID             de.peterkurzok.KidsMusic
-Website               https://playtales.peterkurzok.de
-Privacy policy        https://playtales.peterkurzok.de/privacypolicy/
+Website               https://play-tales.app
+Privacy policy        https://play-tales.app/privacypolicy/
 Contact               playtales@peterkurzok.de
 
 

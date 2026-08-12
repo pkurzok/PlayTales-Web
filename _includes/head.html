@@ -4,8 +4,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<base target="_blank">
 
-	<title class="pageTitle">{{ site.page_title }}</title>
-	<meta name="description" content="{{ site.app_description }}">
+	{% assign share_title = site.page_title %}
+	{% if page.title %}{% assign share_title = page.title | append: " — " | append: site.page_title %}{% endif %}
+	{% assign share_description = page.description | default: site.app_description %}
+	{% assign share_image = site.social_share_image | default: "/assets/Promo.png" | absolute_url %}
+	{% assign canonical = page.url | absolute_url %}
+
+	<title class="pageTitle">{{ share_title }}</title>
+	<meta name="description" content="{{ share_description }}">
+	<link rel="canonical" href="{{ canonical }}">
+
+	<!-- Social share card. Without these, a link posted to Mastodon or handed to a journalist
+	     renders as a bare URL. og:image has to be absolute — relative paths are ignored. -->
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="{{ site.page_title }}">
+	<meta property="og:title" content="{{ share_title }}">
+	<meta property="og:description" content="{{ share_description }}">
+	<meta property="og:url" content="{{ canonical }}">
+	<meta property="og:image" content="{{ share_image }}">
+	<meta property="og:locale" content="{{ site.og_locale }}">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="{{ share_title }}">
+	<meta name="twitter:description" content="{{ share_description }}">
+	<meta name="twitter:image" content="{{ share_image }}">
+
+	<meta name="theme-color" content="{{ site.feature_icons_background_color }}">
 
 	<link rel="shortcut icon" href="{{ site.app_icon | relative_url }}">
 

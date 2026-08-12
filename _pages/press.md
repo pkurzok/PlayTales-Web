@@ -9,7 +9,7 @@ include_in_header: true
 
 Everything needed to cover **PlayTales**: the facts, boilerplate you can paste straight into a
 piece, the app icon, the promo graphic and screenshots from iPhone, iPad and CarPlay. All of it is
-free to use editorially — the terms are [further down](#using-these-assets).
+free to use editorially — the terms are [further down](#using-these-assets){:target="_self"}.
 
 [⬇ Download the complete press kit (ZIP)]({{ site.presskit_bundle | relative_url }})
 {: .presskitDownload}

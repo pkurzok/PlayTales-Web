@@ -1,0 +1,9 @@
+---
+# Front matter, empty on purpose: without it Jekyll copies this file verbatim and the Liquid
+# below ships as literal text. `absolute_url` reads `url` from _config.yml, so the sitemap
+# reference follows the site if the domain ever moves again.
+---
+User-agent: *
+Allow: /
+
+Sitemap: {{ '/sitemap.xml' | absolute_url }}

@@ -14,6 +14,14 @@
 	<meta name="description" content="{{ share_description }}">
 	<link rel="canonical" href="{{ canonical }}">
 
+	<!-- The German and the English site are the same product, page for page, on two domains.
+	     Stated as reciprocal alternates, a search engine serves each visitor the language they
+	     read; left unstated, it reads two sites competing for one intent. Both sides must carry
+	     the full set including a self-reference, or the group is ignored. -->
+	<link rel="alternate" hreflang="{{ site.site_lang }}" href="{{ canonical }}">
+	<link rel="alternate" hreflang="{{ site.alternate_lang }}" href="{{ page.url | prepend: site.alternate_url }}">
+	<link rel="alternate" hreflang="x-default" href="{{ page.url | prepend: site.x_default_url }}">
+
 	<!-- Social share card. Without these, a link posted to Mastodon or handed to a journalist
 	     renders as a bare URL. og:image has to be absolute — relative paths are ignored. -->
 	<meta property="og:type" content="website">
@@ -35,6 +43,42 @@
 	<!-- Smart App Banner -->
 	{% if site.enable_smart_app_banner %}
 		<meta name="apple-itunes-app" content="app-id={{ site.ios_app_id }}">
+	{% endif %}
+
+	{%- comment -%}
+	    App name, price, icon and the App Store href are all filled in client-side by jQuery from
+	    the iTunes API (_includes/appstoreimages.html), so a crawler is handed a page that never
+	    says what the app is. This block states it in markup, on the home page only — the privacy
+	    policy is not the app. Deliberately no aggregateRating: Google honours one only where the
+	    rating is visible on the page, and nothing here renders one.
+	{%- endcomment -%}
+	{% if page.url == '/' %}
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "MobileApplication",
+	  "name": {{ site.page_title | jsonify }},
+	  "description": {{ site.app_description | jsonify }},
+	  "url": {{ site.url | jsonify }},
+	  "image": {{ share_image | jsonify }},
+	  "inLanguage": {{ site.site_lang | jsonify }},
+	  "applicationCategory": "EntertainmentApplication",
+	  "operatingSystem": "iOS 17.0 or later",
+	  "contentRating": "4+",
+	  "installUrl": {{ site.appstore_link | jsonify }},
+	  "offers": {
+	    "@type": "Offer",
+	    "price": "0",
+	    "priceCurrency": {{ site.app_price_currency | jsonify }},
+	    "availability": "https://schema.org/InStock"
+	  },
+	  "author": {
+	    "@type": "Person",
+	    "name": {{ site.your_name | jsonify }},
+	    "url": {{ site.your_link | jsonify }}
+	  }
+	}
+	</script>
 	{% endif %}
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">

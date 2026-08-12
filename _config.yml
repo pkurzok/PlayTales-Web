@@ -6,7 +6,9 @@ page_title                                : PlayTales                           
 ios_app_id                                : 6444850972                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country                           : us                                        # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
-appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
+appstore_link                             : https://apps.apple.com/us/app/id6444850972 # Set explicitly: left empty, the href of the App Store button is filled in by
+                                                                                      # jQuery from the iTunes API, so a crawler — and a visitor without JS — is
+                                                                                      # handed a dead link. It also feeds `installUrl` in the JSON-LD.
 playstore_link                            :                                           # Enter Google Play Store URL.
 presskit_download_link                    :                                           # Deliberately empty: the press page is already in the nav via _pages/press.md.
                                                                                       # Setting this too would duplicate the nav entry.
@@ -27,6 +29,18 @@ url                                       : https://play-tales.app              
 site_lang                                 : en
 og_locale                                 : en_US
 social_share_image                        : /assets/Promo.png                          # 2048×1024, safe for og:image and Twitter's summary_large_image.
+
+# Sibling site                            hoerspieler.app is this same app in German, page for page. Without the
+                                          # reciprocal hreflang links these feed (_includes/head.html), a search engine
+                                          # reads the two domains as separate sites competing for one intent and may
+                                          # serve a German parent this page. Both sites use the same permalinks, so
+                                          # `page.url` maps 1:1 and needs no table.
+alternate_url                             : https://hoerspieler.app
+alternate_lang                            : de
+x_default_url                             : https://play-tales.app                     # The fallback for locales neither site targets — English travels further.
+
+app_price_currency                        : USD                                        # Only feeds the JSON-LD offer. The price a visitor sees still comes from the
+                                                                                      # iTunes API, which knows the store the visitor is actually in.
 
 
 
@@ -151,6 +165,12 @@ footer_text_color                         : "#666666"
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :compressed # You might prefer to minify using :compressed
+
+# jekyll-sitemap ships with the pinned github-pages gem (Gemfile.lock), but is not one of the
+# plugins GitHub Pages enables on its own — without this line there is no /sitemap.xml at all,
+# and nothing to hand Search Console. It reads `url` above, so it moves with the domain.
+plugins:
+  - jekyll-sitemap
 
 # Exclude these files from your production _site
 exclude:

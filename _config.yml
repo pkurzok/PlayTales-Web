@@ -102,7 +102,7 @@ features                                  :
     fontawesome_icon_name                 : cloud
 
   - title                                 : Siri, Shortcuts and Spotlight
-    description                           : Just say “Play Paw Patrol in PlayTales”. Favourites turn up in Spotlight search too (iOS 18 and later).
+    description                           : Just say “Play Paw Patrol in PlayTales”. Favourites turn up in Spotlight search too.
     fontawesome_icon_name                 : microphone
 
   - title                                 : Parents area

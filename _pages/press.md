@@ -28,17 +28,17 @@ sheet as a text file.
 | **Category** | Entertainment (secondary: Music) |
 | **Price** | Free. Optional one-time in-app purchase "PlayTales Pro" at $2.99 — no subscription, Family Sharing enabled |
 | **Requirement** | An Apple Music subscription |
-| **Current version** | 1.5.0 |
+| **Current version** | 1.5.1 |
 | **First released** | 4 January 2024 |
 | **Platforms** | iPhone, iPad, CarPlay |
-| **System requirement** | iOS 17.0 or later |
+| **System requirement** | iOS 18.0 or later (version 1.5.0 still ran on iOS 17.0) |
 | **Languages** | English, German |
 | **Age rating** | 4+ |
 | **App Store** | [apps.apple.com/us/app/id6444850972](https://apps.apple.com/us/app/id6444850972) |
 | **App Store ID** | 6444850972 |
 | **Bundle ID** | de.peterkurzok.KidsMusic |
 | **Privacy** | [Privacy policy]({{ '/privacypolicy/' | relative_url }}) |
-| **Contact** | [playtales@peterkurzok.de](mailto:playtales@peterkurzok.de) |
+| **Contact** | <!--email_off-->[playtales@peterkurzok.de](mailto:playtales@peterkurzok.de)<!--/email_off--> |
 
 ## Boilerplate
 
@@ -63,6 +63,17 @@ sheet as a text file.
 > car, on the train, on holiday. Favourites and playback positions sync through the family's own
 > private iCloud. Parents keep the settings behind an arithmetic task small children can't solve.
 > PlayTales was written by Peter Kurzok, a father of three, originally for his own family.
+
+## New in version 1.5.1
+
+* **A pointer to another app** — at the very bottom of the library the free version shows a single
+  card pointing to an app by other independent developers. It sits below everything else,
+  interrupts nothing, and is only visible if you scroll that far. No user or device identifier and
+  no advertising ID reaches the service that places it, and no profile is built. "PlayTales Pro"
+  removes the card entirely. What is transmitted is set out in the
+  [privacy policy]({{ '/privacypolicy/' | relative_url }}).
+* **iOS 18 required** — 1.5.1 needs iOS 18. Devices on iOS 17 keep version 1.5.0 with its full
+  feature set; they simply receive no further updates.
 
 ## New in version 1.5.0
 
@@ -90,9 +101,10 @@ sheet as a text file.
 * A parents' area behind an arithmetic task, including a switch to turn search off
 * AirPlay and Bluetooth, dark and light mode, VoiceOver and Dynamic Type
 
-**Free versus "PlayTales Pro":** the free version allows three favourites. The one-time in-app
-purchase lifts that limit, unlocks CarPlay, and narrows the library offline to what can actually
-play. There is no subscription and no advertising.
+**Free versus "PlayTales Pro":** the free version allows three favourites and shows one card at the
+foot of the library pointing to another app. The one-time in-app purchase lifts that limit, unlocks
+CarPlay, narrows the library offline to what can actually play, and removes the card. There is no
+subscription.
 
 ## App icon
 
@@ -182,4 +194,4 @@ I'm glad to unlock "PlayTales Pro" free of charge for coverage — a short email
 is enough and a promo code comes back. The same address reaches me for questions, an interview, or
 background on how the app came about:
 
-[playtales@peterkurzok.de](mailto:playtales@peterkurzok.de)
+<!--email_off-->[playtales@peterkurzok.de](mailto:playtales@peterkurzok.de)<!--/email_off-->

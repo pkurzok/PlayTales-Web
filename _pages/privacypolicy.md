@@ -26,7 +26,7 @@ Welserstraße 3
 Germany
 ```
 
-E-mail: [playtales@peterkurzok.de](mailto:playtales@peterkurzok.de)
+E-mail: <!--email_off-->[playtales@peterkurzok.de](mailto:playtales@peterkurzok.de)<!--/email_off-->
 
 No data protection officer has been appointed, as the statutory conditions for doing so are not
 met. Please send all privacy matters to the address above.
@@ -366,7 +366,7 @@ For the app you can exercise this objection yourself, directly, without contacti
 > — switch off *Allow Data Analytics* and/or *Send Crash Reports* there.
 
 Otherwise an informal message to
-[playtales@peterkurzok.de](mailto:playtales@peterkurzok.de) is sufficient. We need no login details
+<!--email_off-->[playtales@peterkurzok.de](mailto:playtales@peterkurzok.de)<!--/email_off--> is sufficient. We need no login details
 to handle your request; please tell us which processing your request concerns.
 
 ### Right to lodge a complaint under Art. 77 GDPR
@@ -430,7 +430,7 @@ nothing from them. In the terms of the Children's Online Privacy Protection Act 
 outside it, and it leads only to the App Store. You may at any time ask us to confirm what data
 associated with your child's device exists, to have it deleted, and to refuse any further
 collection. Write to
-[playtales@peterkurzok.de](mailto:playtales@peterkurzok.de). You can also stop the collection
+<!--email_off-->[playtales@peterkurzok.de](mailto:playtales@peterkurzok.de)<!--/email_off-->. You can also stop the collection
 yourself, immediately and without contacting us, by switching off *Allow Data Analytics* and *Send
 Crash Reports* under **Settings › Legal › Data Analytics & Crash Reports**. Deleting the app removes
 the locally stored data from the device.

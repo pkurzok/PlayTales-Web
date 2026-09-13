@@ -4,7 +4,7 @@ title: Privacy Policy
 include_in_header: false
 ---
 
-**Last updated:** 19 August 2026
+**Last updated:** 13 September 2026
 
 This policy describes what personal data is processed when you use this website (**Part A**) and
 the **PlayTales** app (**Part B**), for what purposes, on what legal basis, who receives it, and
@@ -104,6 +104,10 @@ The following is stored only locally on your device and is **not** transmitted t
 * favourites (saved artists) and recently played albums including playback position,
 * all settings (search, filters, speech output, demo mode, the switches for statistics and crash
   reports),
+* the parental controls: the configured daily and weekly limit, how much has already been listened
+  to today and this week, any release that has been granted (until midnight at the latest), and — if
+  one is set — the parent's PIN. The PIN is **not stored in the clear**: only a salted cryptographic digest (SHA-256) is kept.
+  The digits themselves never leave the device and are not retained locally either,
 * the cache for album artwork and for generated speech audio files,
 * the local search index (Spotlight) and in-app tips.
 
@@ -170,6 +174,12 @@ be directed accordingly.
 with related technical attributes (such as which speech method was used, whether a filter is
 active, the number of favourites), the app version originally purchased, and a **device-bound
 identifier** (the *vendor ID* assigned by Apple) that groups the events of one device.
+
+For the parental controls, the only things transmitted are **whether** a daily or weekly limit was
+switched on or off, **which** of the two it was, whether a PIN is set, and that a release was
+used — without saying whether it was for the rest of the day or for a few minutes. The configured duration, the time actually listened to and the PIN itself are **not
+transmitted** — how long a child may listen is a parenting decision, not a technical fact about the
+app.
 
 **This identifier is pseudonymous, not anonymous.** It is not linked to a name, an e-mail address
 or an account — the app knows none of these — but it remains personal data under the GDPR. It is
@@ -335,8 +345,12 @@ This app is aimed at children, which calls for particular restraint:
   leads to the App Store, where a purchase requires confirmation via the Apple account as always.
   **Pro removes the card entirely.**
 * There is no chat, comment or other communication feature.
-* The app's settings are protected by an **arithmetic challenge** so that children cannot change
-  them themselves. Purchases additionally require confirmation via the Apple account.
+* The app's settings are protected by an **arithmetic challenge** — or, if you have set a
+  **PIN** of your own, by that PIN — so that children cannot change them themselves. Purchases
+  additionally require confirmation via the Apple account.
+* You can set a **daily and a weekly listening allowance**. The counting this needs happens entirely
+  on the device; neither the configured duration nor the time listened to is transmitted to the
+  provider or to any third party.
 
 The holder of parental responsibility decides on the use of the app and on the processing described
 in sections 5.6, 5.7 and 5.9 (cf. Art. 8 GDPR). Please contact the address in section 1 if you wish to
@@ -423,8 +437,10 @@ nothing from them. In the terms of the Children's Online Privacy Protection Act 
 * The only identifier processed is the device-bound Apple vendor ID described in section 5.6, used
   solely for internal usage statistics — never to contact a user, build a profile, or track anyone
   across services.
-* The app's settings are protected by an arithmetic challenge so that a child cannot change them
-  unsupervised; purchases require confirmation through the parent's Apple account.
+* The app's settings are protected by an arithmetic challenge — or by a PIN of the parent's
+  choosing, if one is set — so that a child cannot change them unsupervised; purchases require confirmation
+  through the parent's Apple account. A parent may also cap daily and weekly listening time; that
+  counting stays on the device and is never transmitted.
 
 **Parents:** the card described in section 5.9 is the one thing in the app a child can tap that leads
 outside it, and it leads only to the App Store. You may at any time ask us to confirm what data

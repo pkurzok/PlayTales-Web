@@ -4,7 +4,7 @@ title: Privacy Policy
 include_in_header: false
 ---
 
-**Last updated:** 4 August 2026
+**Last updated:** 13 September 2026
 
 This policy describes what personal data is processed when you use this website (**Part A**) and
 the **PlayTales** app (**Part B**), for what purposes, on what legal basis, who receives it, and
@@ -26,7 +26,7 @@ Welserstraße 3
 Germany
 ```
 
-E-mail: [playtales@peterkurzok.de](mailto:playtales@peterkurzok.de)
+E-mail: <!--email_off-->[playtales@peterkurzok.de](mailto:playtales@peterkurzok.de)<!--/email_off-->
 
 No data protection officer has been appointed, as the statutory conditions for doing so are not
 met. Please send all privacy matters to the address above.
@@ -104,6 +104,10 @@ The following is stored only locally on your device and is **not** transmitted t
 * favourites (saved artists) and recently played albums including playback position,
 * all settings (search, filters, speech output, demo mode, the switches for statistics and crash
   reports),
+* the parental controls: the configured daily and weekly limit, how much has already been listened
+  to today and this week, any release that has been granted (until midnight at the latest), and — if
+  one is set — the parent's PIN. The PIN is **not stored in the clear**: only a salted cryptographic digest (SHA-256) is kept.
+  The digits themselves never leave the device and are not retained locally either,
 * the cache for album artwork and for generated speech audio files,
 * the local search index (Spotlight) and in-app tips.
 
@@ -171,6 +175,12 @@ with related technical attributes (such as which speech method was used, whether
 active, the number of favourites), the app version originally purchased, and a **device-bound
 identifier** (the *vendor ID* assigned by Apple) that groups the events of one device.
 
+For the parental controls, the only things transmitted are **whether** a daily or weekly limit was
+switched on or off, **which** of the two it was, whether a PIN is set, and that a release was
+used — without saying whether it was for the rest of the day or for a few minutes. The configured duration, the time actually listened to and the PIN itself are **not
+transmitted** — how long a child may listen is a parenting decision, not a technical fact about the
+app.
+
 **This identifier is pseudonymous, not anonymous.** It is not linked to a name, an e-mail address
 or an account — the app knows none of these — but it remains personal data under the GDPR. It is
 reset once you remove all of this provider's apps from your device.
@@ -219,6 +229,41 @@ solely by you; the file is saved to the location you choose. The provider does n
 
 *Legal basis:* Art. 6(1)(b) GDPR.
 
+### 5.9 A pointer to another app (Kickstart Exchange)
+
+*Purpose:* In the free version, **a single card** appears at the very bottom of the library screen
+pointing to an app by another independent developer. It helps fund the development of this app.
+
+**Who sees it:** only people **without** Pro. Anyone who has bought Pro, or is grandfathered in from
+an earlier purchase, sees no card — and their device then makes **no connection to this service at
+all**.
+
+*Data processed:* this app's key with the service, the app identifier (bundle ID), platform, app and
+build version, the version of the embedded component, and — only in builds delivered through the App
+Store — the Apple-signed purchase receipt **of the app itself** (it proves to the service that the
+requesting app is genuine; it concerns the app, not your purchases). When a card is fetched, the
+**country of your App Store account** is added, for example "United Kingdom", so that only apps
+available there are shown. Whether a card was seen and whether it was tapped is reported back as a
+count.
+
+**Not transmitted:** no advertising identifier, no user or device identifier, no location, and no
+content — neither search terms nor the names of the artists or albums you listen to. The service
+matches **apps**, not people; no profile is built and no cross-provider tracking takes place. That
+is also why the app never asks for tracking permission: there is nothing to track.
+
+*Recipient:* Hudson Heavy Industries Ltd, 37 Great Pulteney Street, Bath, BA2 4DA, United Kingdom
+(company number 11883499), operator of *Kickstart Exchange* (`api.kickstart.tools`). The provider
+states that delivery runs over Cloudflare's network.
+
+*Legal basis:* Art. 6(1)(f) GDPR — legitimate interest. The balancing: the provider has a legitimate
+interest in funding the free version without collecting data about the people who use it. No
+overriding interests stand against this, because only details about the **app** are transmitted and
+not a single detail about the person in front of it — no identifier, no location, no content — so no
+profile can arise, and because buying Pro removes the card permanently.
+
+**Switching it off:** Pro removes the card entirely; from then on no data is sent to this service.
+Independently of that, you may object under Art. 21 GDPR at any time at the address in section 1.
+
 ---
 
 ## 6. Overview of recipients
@@ -236,9 +281,13 @@ solely by you; the file is saved to the location you choose. The provider does n
 | Google LLC (USA) | App | title to be read out, language, voice gender | speech output (can be switched off) | Art. 6(1)(b) |
 | Mixpanel, Inc. (EU data centre) | App | event names, technical attributes, vendor ID | usage statistics (can be objected to) | Art. 6(1)(f) |
 | Functional Software, Inc. – Sentry (EU region) | App | crash and diagnostic data | stability (can be objected to) | Art. 6(1)(f) |
+| Hudson Heavy Industries Ltd – Kickstart Exchange (United Kingdom) | App | app identifier, versions, the app's own purchase receipt, App Store account country, impression and click counts | pointer to another app (removed by Pro) | Art. 6(1)(f) |
 
-No data is disclosed for advertising purposes. **We do not sell personal information.** There is no
-cross-provider tracking; the device identifier is not combined with third-party data.
+**No data about you is disclosed for advertising purposes.** Since version 1.5.1 the free version
+does show a pointer to another app (section 5.9) — but only details about **this app** are
+transmitted for it, and not a single one about the person using it. **We do not sell personal
+information.** There is no cross-provider tracking; the device identifier from section 5.6 is not
+combined with third-party data and never reaches the advertising service.
 
 ## 7. Transfers to third countries
 
@@ -252,6 +301,10 @@ transfers:
   Standard contractual clauses are in place for supporting access from the USA.
 * **Sentry:** this app's data is processed in the **EU region** (data centre in Germany). Standard
   contractual clauses are in place for supporting access from the USA.
+* **Kickstart Exchange** is based in the **United Kingdom**. The European Commission has adopted an
+  **adequacy decision** for the United Kingdom under Art. 45 GDPR, so the transfer requires no
+  additional safeguards. The provider states that delivery runs over Cloudflare's network; it does
+  not state in which country the data is stored.
 
 As matters stand, the USA does not offer a level of protection fully equivalent to that of the EU;
 in particular, access by US authorities cannot be ruled out in every case. You can switch off the
@@ -268,6 +321,10 @@ to Google for speech output by selecting Apple speech output (section 5.5).
 * **Usage statistics** are kept only for as long as they are needed to compare usage across app
   versions, then deleted automatically by Mixpanel. The governing period is the retention period
   set on the Mixpanel project.
+* **Records relating to the pointer to another app** (section 5.9) are kept by the provider for
+  approximately **30 days** by its own account. Daily totals per pair of apps (app identifiers, date,
+  platform, country, impression and click counts) are kept for analysis without a fixed deletion
+  date; they contain no reference to a person.
 * **Server logs** at Cloudflare and GitHub are deleted after the short periods applicable there.
 
 We will tell you the periods currently configured on request, at the address in section 1.
@@ -281,13 +338,22 @@ This app is aimed at children, which calls for particular restraint:
 
 * There is **no user account**, no registration and no sign-in.
 * **No contact details** are collected — no name, e-mail address, phone number or postal address.
-* There is **no advertising**, no advertising identifiers and no cross-provider tracking.
+* The free version shows **a single card** pointing to another app (section 5.9). It sits at the
+  very bottom of the library screen, interrupts nothing, does not blink, opens nothing by itself and
+  is only visible if you scroll that far. There are **no advertising identifiers**, no profile and no
+  cross-provider tracking — not a single detail about the child is sent to the service. Tapping it
+  leads to the App Store, where a purchase requires confirmation via the Apple account as always.
+  **Pro removes the card entirely.**
 * There is no chat, comment or other communication feature.
-* The app's settings are protected by an **arithmetic challenge** so that children cannot change
-  them themselves. Purchases additionally require confirmation via the Apple account.
+* The app's settings are protected by an **arithmetic challenge** — or, if you have set a
+  **PIN** of your own, by that PIN — so that children cannot change them themselves. Purchases
+  additionally require confirmation via the Apple account.
+* You can set a **daily and a weekly listening allowance**. The counting this needs happens entirely
+  on the device; neither the configured duration nor the time listened to is transmitted to the
+  provider or to any third party.
 
 The holder of parental responsibility decides on the use of the app and on the processing described
-in sections 5.6 and 5.7 (cf. Art. 8 GDPR). Please contact the address in section 1 if you wish to
+in sections 5.6, 5.7 and 5.9 (cf. Art. 8 GDPR). Please contact the address in section 1 if you wish to
 request deletion of your child's data. Section 14 adds the specifics under US law.
 
 ## 10. Your rights
@@ -314,7 +380,7 @@ For the app you can exercise this objection yourself, directly, without contacti
 > — switch off *Allow Data Analytics* and/or *Send Crash Reports* there.
 
 Otherwise an informal message to
-[playtales@peterkurzok.de](mailto:playtales@peterkurzok.de) is sufficient. We need no login details
+<!--email_off-->[playtales@peterkurzok.de](mailto:playtales@peterkurzok.de)<!--/email_off--> is sufficient. We need no login details
 to handle your request; please tell us which processing your request concerns.
 
 ### Right to lodge a complaint under Art. 77 GDPR
@@ -363,16 +429,24 @@ nothing from them. In the terms of the Children's Online Privacy Protection Act 
   number, postal address, photo, voice recording or geolocation is collected.
 * There is **no chat, comment, messaging, social feature or user-generated content**, so a child
   cannot disclose personal information to anyone through the app.
-* There is **no advertising**, no advertising identifier and no behavioural profiling.
+* Advertising is limited to **one contextual card** in the free version (section 5.9), and it is
+  **not** behavioural: no advertising identifier is read, no persistent identifier is sent to the
+  service, and nothing about the child is collected, retained or used to select what is shown. Which
+  app appears is chosen from the App Store account's country alone. There is **no behavioural
+  profiling**, no retargeting and no cross-service tracking. Pro removes the card entirely.
 * The only identifier processed is the device-bound Apple vendor ID described in section 5.6, used
   solely for internal usage statistics — never to contact a user, build a profile, or track anyone
   across services.
-* The app's settings are protected by an arithmetic challenge so that a child cannot change them
-  unsupervised; purchases require confirmation through the parent's Apple account.
+* The app's settings are protected by an arithmetic challenge — or by a PIN of the parent's
+  choosing, if one is set — so that a child cannot change them unsupervised; purchases require confirmation
+  through the parent's Apple account. A parent may also cap daily and weekly listening time; that
+  counting stays on the device and is never transmitted.
 
-**Parents:** you may at any time ask us to confirm what data associated with your child's device
-exists, to have it deleted, and to refuse any further collection. Write to
-[playtales@peterkurzok.de](mailto:playtales@peterkurzok.de). You can also stop the collection
+**Parents:** the card described in section 5.9 is the one thing in the app a child can tap that leads
+outside it, and it leads only to the App Store. You may at any time ask us to confirm what data
+associated with your child's device exists, to have it deleted, and to refuse any further
+collection. Write to
+<!--email_off-->[playtales@peterkurzok.de](mailto:playtales@peterkurzok.de)<!--/email_off-->. You can also stop the collection
 yourself, immediately and without contacting us, by switching off *Allow Data Analytics* and *Send
 Crash Reports* under **Settings › Legal › Data Analytics & Crash Reports**. Deleting the app removes
 the locally stored data from the device.
@@ -380,11 +454,19 @@ the locally stored data from the device.
 ## 15. California (CCPA/CPRA)
 
 **We do not sell personal information, and we do not share it for cross-context behavioural
-advertising.** We have not done so in the preceding twelve months. No advertising network, data
-broker or ad SDK receives data from this app or this website.
+advertising.** We have not done so in the preceding twelve months. No data broker receives data from
+this app or this website.
+
+Since version 1.5.1 the free version does embed one advertising component, Kickstart Exchange
+(section 5.9). What it receives is information about **the app**, together with the App Store
+account's country — no advertising identifier, no device or user identifier, and nothing derived
+from a person's activity. Under the CCPA/CPRA definitions that is neither a *sale* nor *sharing for
+cross-context behavioural advertising*, because nothing personal is exchanged and no profile is
+built across services. Buying Pro removes the component's activity entirely.
 
 The categories of personal information processed are those listed in sections 3 to 6: identifiers
-(a device-bound vendor ID; IP addresses in the server logs of our hosting and delivery providers),
+(a device-bound vendor ID; IP addresses in the server logs of our hosting and delivery providers,
+and of the advertising service in section 5.9),
 internet or other electronic network activity information (which app features were used, which
 pages were requested), and diagnostic information from crash reports. They are processed for the
 business purposes stated in each section and are not used for profiling that produces legal or

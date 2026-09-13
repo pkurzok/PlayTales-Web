@@ -3,7 +3,8 @@ PLAYTALES — PRESS KIT
 
 PlayTales is an audio play player for children that reaches into the Apple Music
 catalogue. Big cover tiles instead of lists, titles read aloud for children who can't
-read yet, a sleep timer, and offline playback for the road.
+read yet, a sleep timer, offline playback for the road, and listening limits for
+parents.
 
 This kit holds everything needed to cover the app. The current version always lives at
 https://play-tales.app/press/
@@ -20,10 +21,10 @@ Category              Entertainment (secondary: Music)
 Price                 Free. Optional one-time in-app purchase "PlayTales Pro"
                       at $2.99 / £2.99 / 2,99 € — no subscription, Family Sharing enabled.
 Requirement           An Apple Music subscription. Without one the catalogue won't play.
-Current version       1.5.0
+Current version       1.6.0
 First released        4 January 2024
 Platforms             iPhone, iPad, CarPlay
-System requirement    iOS 17.0 or later
+System requirement    iOS 18.0 or later (version 1.5.0 still ran on iOS 17.0)
 Languages             English, German
 Age rating            4+
 App Store             https://apps.apple.com/us/app/id6444850972
@@ -53,9 +54,9 @@ catalogue. In place of lists and menus it shows big, colourful covers a child ca
 straight away, and it reads artists and episodes aloud for anyone who can't read yet.
 A sleep timer ends the story by itself, and episodes downloaded through Apple Music
 keep playing with no signal at all — in the car, on the train, on holiday. Favourites
-and playback positions sync through the family's own private iCloud. Parents keep the
-settings behind an arithmetic task small children can't solve. PlayTales was written
-by Peter Kurzok, a father of three, originally for his own family.
+and playback positions sync through the family's own private iCloud. Parents decide how
+long their child may listen each day or week, and keep the settings behind a PIN.
+PlayTales was written by Peter Kurzok, a father of three, originally for his own family.
 
 
 WHAT'S IN THIS KIT

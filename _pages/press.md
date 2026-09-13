@@ -28,7 +28,7 @@ sheet as a text file.
 | **Category** | Entertainment (secondary: Music) |
 | **Price** | Free. Optional one-time in-app purchase "PlayTales Pro" at $2.99 — no subscription, Family Sharing enabled |
 | **Requirement** | An Apple Music subscription |
-| **Current version** | 1.5.1 |
+| **Current version** | 1.6.0 |
 | **First released** | 4 January 2024 |
 | **Platforms** | iPhone, iPad, CarPlay |
 | **System requirement** | iOS 18.0 or later (version 1.5.0 still ran on iOS 17.0) |
@@ -61,18 +61,29 @@ sheet as a text file.
 > reads artists and episodes aloud for anyone who can't read yet. A sleep timer ends the story by
 > itself, and episodes downloaded through Apple Music keep playing with no signal at all — in the
 > car, on the train, on holiday. Favourites and playback positions sync through the family's own
-> private iCloud. Parents keep the settings behind an arithmetic task small children can't solve.
-> PlayTales was written by Peter Kurzok, a father of three, originally for his own family.
+> private iCloud. Parents decide how long their child may listen each day or week, and keep the
+> settings behind a PIN. PlayTales was written by Peter Kurzok, a father of three, originally for his own family.
 
-## New in version 1.5.1
+## New in version 1.6.0
 
+* **Limit listening time** — parents set a daily and a weekly allowance: 15 minutes to two hours a
+  day, two to ten hours a week. Only actual listening counts, and it is counted on the device only —
+  neither the allowance nor the time listened is transmitted. Parental controls are part of the free
+  version.
+* **"Ten more minutes" or "no limit today"** — when time is up, the child gets a friendly notice;
+  only a parent can extend it. For long car journeys "Lift limits for today" releases both limits
+  until midnight, and while CarPlay is connected they don't apply at all — no story is cut off
+  mid-drive.
+* **A PIN instead of a math task** — the settings can be guarded by a PIN of four to twelve digits;
+  anyone who forgets it gets back in through a harder math task. Only a salted digest is stored,
+  never the digits themselves.
 * **A pointer to another app** — at the very bottom of the library the free version shows a single
   card pointing to an app by other independent developers. It sits below everything else,
   interrupts nothing, and is only visible if you scroll that far. No user or device identifier and
   no advertising ID reaches the service that places it, and no profile is built. "PlayTales Pro"
   removes the card entirely. What is transmitted is set out in the
   [privacy policy]({{ '/privacypolicy/' | relative_url }}).
-* **iOS 18 required** — 1.5.1 needs iOS 18. Devices on iOS 17 keep version 1.5.0 with its full
+* **iOS 18 required** — 1.6.0 needs iOS 18. Devices on iOS 17 keep version 1.5.0 with its full
   feature set; they simply receive no further updates.
 
 ## New in version 1.5.0
@@ -98,13 +109,13 @@ sheet as a text file.
 * Favourites and recently played, with playback positions down to the second
 * Sleep timer and offline playback
 * CarPlay support
-* A parents' area behind an arithmetic task, including a switch to turn search off
+* Parental controls: daily and weekly limits, a PIN or math task, and a switch to turn search off
 * AirPlay and Bluetooth, dark and light mode, VoiceOver and Dynamic Type
 
 **Free versus "PlayTales Pro":** the free version allows three favourites and shows one card at the
 foot of the library pointing to another app. The one-time in-app purchase lifts that limit, unlocks
-CarPlay, narrows the library offline to what can actually play, and removes the card. There is no
-subscription.
+CarPlay, narrows the library offline to what can actually play, and removes the card. Parental
+controls come with both. There is no subscription.
 
 ## App icon
 

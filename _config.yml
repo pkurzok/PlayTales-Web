@@ -64,59 +64,43 @@ mastodon_link                             : https://kind.social/@filmaniac
 # Feature List                            Edit, add or remove features to be presented.
 #                                         Order matters: the first rows are the ones a parent reads.
 #                                         Icons must exist in Font Awesome 5.6.3 Free (see _includes/head.html).
+#                                         Written as benefits: the title says what a family gets, the
+#                                         description names the feature that delivers it. Say "with Pro"
+#                                         wherever a benefit depends on it (CarPlay, the offline view).
+#                                         No ": " or " #" inside a value — YAML would split or truncate it.
 features                                  :
 
-  - title                                 : Listen offline
-    description                           : No signal? No problem. Whatever Apple Music has downloaded to the device, PlayTales shows and plays without a connection — in the car, on the train, on holiday.
-    fontawesome_icon_name                 : wifi
-
-  - title                                 : Sleep timer
-    description                           : From five minutes to an hour, or simply until the end of the episode. The story stops by itself, so nobody has to get up.
-    fontawesome_icon_name                 : moon
-
-  - title                                 : Apple Music Integration
-    description                           : Access the largest streaming catalog and play every audio play, audiobook and album on offer from Apple.
-    fontawesome_icon_name                 : music
-
-  - title                                 : Favorites
-    description                           : Keep your favourite stories for quick access — as big, colourful tiles made for small fingers.
-    fontawesome_icon_name                 : heart
-
-  - title                                 : Easy to operate for kids
-    description                           : Big buttons, no menus, nothing to get lost in. Browse albums with Cover Flow or in a tile view.
-    fontawesome_icon_name                 : child
-
-  - title                                 : Voice output
-    description                           : You can't read yet? No problem! Have the titles of artists and episodes read to you.
-    fontawesome_icon_name                 : comment
-
-  - title                                 : Pick up where you left off
-    description                           : PlayTales remembers the playback position of recently played albums — down to the second.
-    fontawesome_icon_name                 : play-circle
-
-  - title                                 : CarPlay
-    description                           : Keep listening in the car without turning around. Recently played and favourites right on the dashboard.
+  - title                                 : Peace and quiet on the back seat
+    description                           : No signal in the car? Whatever Apple Music has downloaded to the device, PlayTales still shows and plays — and favourites and recently played sit right on the CarPlay screen. The offline view and CarPlay come with Pro.
     fontawesome_icon_name                 : car
 
-  - title                                 : In sync on every device
-    description                           : Favourites and playback positions travel with you through your own private iCloud — from iPhone to iPad and back.
-    fontawesome_icon_name                 : cloud
+  - title                                 : Bedtime without anyone getting up
+    description                           : The sleep timer stops the story after anything from five minutes to an hour — or right at the end of the episode.
+    fontawesome_icon_name                 : moon
 
-  - title                                 : Siri, Shortcuts and Spotlight
-    description                           : Just say “Play Paw Patrol in PlayTales”. Favourites turn up in Spotlight search too (iOS 18 and later).
-    fontawesome_icon_name                 : microphone
+  - title                                 : You decide how long they listen
+    description                           : Set a daily or weekly limit, guarded by your PIN. For long car journeys there's “ten more minutes” or “no limit today”. At no extra cost, and the counting stays on the device.
+    fontawesome_icon_name                 : hourglass-half
 
-  - title                                 : Parents area
-    description                           : Adapt PlayTales to the needs of your little ones, for example by turning the search off. Behind a small arithmetic task that children can't solve.
+  - title                                 : Kids listen on their own — even before they can read
+    description                           : Big, colourful covers instead of menus, and PlayTales can read the titles aloud. Your child finds their favourite episode without help.
+    fontawesome_icon_name                 : child
+
+  - title                                 : Pick up exactly where they left off
+    description                           : PlayTales remembers the spot to the second — and carries it through your private iCloud, from iPhone to iPad and back.
+    fontawesome_icon_name                 : play-circle
+
+  - title                                 : Nothing for kids to get lost in
+    description                           : Search can be switched off entirely, and the settings sit behind your PIN or a math task children can't solve.
     fontawesome_icon_name                 : lock
 
-  - title                                 : AirPlay and Bluetooth Support
-    description                           : You have an external speaker? Great! PlayTales also plays directly to your ears or on the big speakers.
-    fontawesome_icon_name                 : bullhorn
+  - title                                 : Every story in your Apple Music
+    description                           : No second library and no buying episodes one by one. PlayTales plays the audio plays and audiobooks on Apple Music — all you need is your subscription.
+    fontawesome_icon_name                 : music
 
-  - title                                 : Dark and Lightmode
-    description                           : Whether you listen during the day or in bed at night, PlayTales is dressed for the occasion.
-    fontawesome_icon_name                 : lightbulb
+  - title                                 : “Play Paw Patrol” — and it plays
+    description                           : Siri and Shortcuts start a story when asked. Favourites turn up in Spotlight search too (iOS 18 and later).
+    fontawesome_icon_name                 : microphone
 
 
 # Theme Settings

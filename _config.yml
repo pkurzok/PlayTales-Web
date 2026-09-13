@@ -99,7 +99,7 @@ features                                  :
     fontawesome_icon_name                 : music
 
   - title                                 : “Play Paw Patrol” — and it plays
-    description                           : Siri and Shortcuts start a story when asked. Favourites turn up in Spotlight search too (iOS 18 and later).
+    description                           : Siri and Shortcuts start a story when asked. Favourites turn up in Spotlight search too.
     fontawesome_icon_name                 : microphone
 
 

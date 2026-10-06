@@ -121,9 +121,9 @@ playback activity, your subscription status and artwork requests are transmitted
 the process.
 
 To show your favourites and recently played albums, the app looks up their **catalogue identifiers**
-with Apple Music. For the suggestions in the search area it also requests the **most-played albums**
-of the audio-play and children's genres in your Apple Music country (a charts request) and the
-artists Apple Music considers **similar to your favourites**; the catalogue identifiers of your
+with Apple Music. For the suggestions in the search area it also searches the catalogue of your
+Apple Music country for **well-known audio play series** (a fixed query, the same for every user) and
+requests the artists Apple Music considers **similar to your favourites**; the catalogue identifiers of your
 favourites are transmitted to Apple for this. The suggestions are held in the app's memory only and
 reach neither us nor any analytics service.
 
@@ -282,7 +282,7 @@ Independently of that, you may object under Art. 21 GDPR at any time at the addr
 | Google LLC (USA) | Website | IP address, user agent | delivery of jQuery | Art. 6(1)(f) |
 | Fonticons, Inc. (USA) | Website | IP address, user agent | delivery of the icon font | Art. 6(1)(f) |
 | Apple Inc. (USA) | Website | IP address | retrieval of App Store details | Art. 6(1)(f) |
-| Apple Inc. (USA) | App | search terms, playback, subscription status, artwork requests, catalogue identifiers of favourites, chart and similar-artist requests | Apple Music / MusicKit | Art. 6(1)(b) |
+| Apple Inc. (USA) | App | search terms, playback, subscription status, artwork requests, catalogue identifiers of favourites, requests for suggestions (audio play series, similar artists) | Apple Music / MusicKit | Art. 6(1)(b) |
 | Apple Inc. (USA) | App | favourites, history, playback positions | syncing via your private iCloud | Art. 6(1)(b) |
 | Apple Inc. (USA) | App | purchases, original app version | purchases, grandfathering | Art. 6(1)(b) |
 | Google LLC (USA) | App | title to be read out, language, voice gender | speech output (can be switched off) | Art. 6(1)(b) |

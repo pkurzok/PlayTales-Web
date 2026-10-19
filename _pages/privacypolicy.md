@@ -4,7 +4,7 @@ title: Privacy Policy
 include_in_header: false
 ---
 
-**Last updated:** 6 October 2026
+**Last updated:** 14 October 2026
 
 This policy describes what personal data is processed when you use this website (**Part A**) and
 the **PlayTales** app (**Part B**), for what purposes, on what legal basis, who receives it, and
@@ -271,6 +271,45 @@ profile can arise, and because buying Pro removes the card permanently.
 **Switching it off:** Pro removes the card entirely; from then on no data is sent to this service.
 Independently of that, you may object under Art. 21 GDPR at any time at the address in section 1.
 
+### 5.10 Feature requests (Kickstart Signal)
+
+*Purpose:* a board on which parents can suggest new features for PlayTales, vote on other people's
+ideas and comment on them, so that development follows what families actually need. It is only
+reachable through the app's settings, behind the **arithmetic challenge or PIN**, and only on
+**iOS 18 and later**.
+
+**Who reaches it:** nobody who does not open *Settings › Feature Requests*. Until then, no connection
+is made to this service at all. Merely browsing the board transmits only the app's own
+identification, nothing about the person.
+
+*Data processed:* this app's key with the service, the app identifier (bundle ID) and the version of
+the embedded component — and, only if the service asks for it, the Apple-signed purchase receipt
+**of the app itself** (as in section 5.9). On the **first vote, idea or comment**, the app creates a
+**random installation identifier** that is sent with every further contribution; it is not derived
+from the device and is used for nothing else. Also transmitted: the **text you write** (the title and
+description of an idea, or a comment), your **votes**, and **whether Pro is active**, so that ideas
+from paying customers can be marked. The service uses your IP address temporarily to prevent abuse
+and, by its own account, does not store it.
+
+**Not transmitted:** no name, no e-mail address, no account, no advertising or device identifier,
+and no listening content — neither search terms nor the names of the artists or albums you listen
+to. Please do not write anything personal into an idea or comment.
+
+*Moderation:* every idea and every comment stays **private** until we have reviewed and published it. We may edit or delete contributions. Nothing is ever shown with a name.
+
+*Recipient:* Hudson Heavy Industries Ltd, 37 Great Pulteney Street, Bath, BA2 4DA, United Kingdom
+(company number 11883499), operator of *Kickstart Signal* (`api.kickstart.tools`). The provider
+states that delivery runs over Cloudflare's network.
+
+*Legal basis:* Art. 6(1)(f) GDPR — legitimate interest in showing the board and in learning which
+features are wanted. Submitting is voluntary: you decide whether to write anything and what.
+
+*Retention:* ideas, comments and votes are kept for as long as the board exists. Because the service
+cannot tell who wrote what, a contribution cannot be deleted from within the app; write to the
+address in section 1 and we will delete it.
+
+**Avoiding it:** simply do not open the row. Without it, no data is sent to this service.
+
 ---
 
 ## 6. Overview of recipients
@@ -289,6 +328,7 @@ Independently of that, you may object under Art. 21 GDPR at any time at the addr
 | Mixpanel, Inc. (EU data centre) | App | event names, technical attributes, vendor ID | usage statistics (can be objected to) | Art. 6(1)(f) |
 | Functional Software, Inc. – Sentry (EU region) | App | crash and diagnostic data | stability (can be objected to) | Art. 6(1)(f) |
 | Hudson Heavy Industries Ltd – Kickstart Exchange (United Kingdom) | App | app identifier, versions, the app's own purchase receipt, App Store account country, impression and click counts | pointer to another app (removed by Pro) | Art. 6(1)(f) |
+| Hudson Heavy Industries Ltd – Kickstart Signal (United Kingdom) | App | installation identifier, text of ideas and comments, votes, Pro status | feature requests | Art. 6(1)(f) / voluntary |
 
 **No data about you is disclosed for advertising purposes.** Since version 1.5.1 the free version
 does show a pointer to another app (section 5.9) — but only details about **this app** are
@@ -308,7 +348,7 @@ transfers:
   Standard contractual clauses are in place for supporting access from the USA.
 * **Sentry:** this app's data is processed in the **EU region** (data centre in Germany). Standard
   contractual clauses are in place for supporting access from the USA.
-* **Kickstart Exchange** is based in the **United Kingdom**. The European Commission has adopted an
+* **Kickstart Exchange and Kickstart Signal** are based in the **United Kingdom**. The European Commission has adopted an
   **adequacy decision** for the United Kingdom under Art. 45 GDPR, so the transfer requires no
   additional safeguards. The provider states that delivery runs over Cloudflare's network; it does
   not state in which country the data is stored.
@@ -332,6 +372,8 @@ to Google for speech output by selecting Apple speech output (section 5.5).
   approximately **30 days** by its own account. Daily totals per pair of apps (app identifiers, date,
   platform, country, impression and click counts) are kept for analysis without a fixed deletion
   date; they contain no reference to a person.
+* **Feature requests** (section 5.10) — ideas, comments and votes — are kept for as long as the
+  board exists. On request we delete a contribution earlier.
 * **Server logs** at Cloudflare and GitHub are deleted after the short periods applicable there.
 
 We will tell you the periods currently configured on request, at the address in section 1.
@@ -351,7 +393,10 @@ This app is aimed at children, which calls for particular restraint:
   cross-provider tracking — not a single detail about the child is sent to the service. Tapping it
   leads to the App Store, where a purchase requires confirmation via the Apple account as always.
   **Pro removes the card entirely.**
-* There is no chat, comment or other communication feature.
+* The only place in the app to write anything is the **feature-request board** in the settings
+  (section 5.10). It sits behind the arithmetic challenge or PIN and is meant for parents. Nothing
+  written there is visible to anyone until we have reviewed and published it, and nothing
+  is ever shown with a name.
 * The app's settings are protected by an **arithmetic challenge** — or, if you have set a
   **PIN** of your own, by that PIN — so that children cannot change them themselves. Purchases
   additionally require confirmation via the Apple account.
@@ -360,7 +405,7 @@ This app is aimed at children, which calls for particular restraint:
   provider or to any third party.
 
 The holder of parental responsibility decides on the use of the app and on the processing described
-in sections 5.6, 5.7 and 5.9 (cf. Art. 8 GDPR). Please contact the address in section 1 if you wish to
+in sections 5.6, 5.7, 5.9 and 5.10 (cf. Art. 8 GDPR). Please contact the address in section 1 if you wish to
 request deletion of your child's data. Section 14 adds the specifics under US law.
 
 ## 10. Your rights
@@ -434,8 +479,11 @@ nothing from them. In the terms of the Children's Online Privacy Protection Act 
 * We **do not collect personal information from children** in the sense of contact or identifying
   details: there is no account, no registration and no sign-in, and no name, e-mail address, phone
   number, postal address, photo, voice recording or geolocation is collected.
-* There is **no chat, comment, messaging, social feature or user-generated content**, so a child
-  cannot disclose personal information to anyone through the app.
+* There is **no chat, messaging or social feature**. The only place to write anything is the
+  feature-request board (section 5.10), which sits behind the parental arithmetic challenge or PIN
+  and is meant for parents. Every contribution is moderated — nothing is visible to anyone until we have
+  reviewed and published it — and nothing is ever shown with a name. The board's
+  random identifier is not created at all unless a parent submits an idea, a comment or a vote.
 * Advertising is limited to **one contextual card** in the free version (section 5.9), and it is
   **not** behavioural: no advertising identifier is read, no persistent identifier is sent to the
   service, and nothing about the child is collected, retained or used to select what is shown. Which
@@ -470,6 +518,9 @@ account's country — no advertising identifier, no device or user identifier, a
 from a person's activity. Under the CCPA/CPRA definitions that is neither a *sale* nor *sharing for
 cross-context behavioural advertising*, because nothing personal is exchanged and no profile is
 built across services. Buying Pro removes the component's activity entirely.
+
+Ideas, comments and votes on the feature-request board (section 5.10) are written voluntarily by a
+parent, carry only a random installation identifier, and are neither sold nor shared.
 
 The categories of personal information processed are those listed in sections 3 to 6: identifiers
 (a device-bound vendor ID; IP addresses in the server logs of our hosting and delivery providers,

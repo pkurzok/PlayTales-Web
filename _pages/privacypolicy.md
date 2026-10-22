@@ -4,7 +4,7 @@ title: Privacy Policy
 include_in_header: false
 ---
 
-**Last updated:** 14 October 2026
+**Last updated:** 22 October 2026
 
 This policy describes what personal data is processed when you use this website (**Part A**) and
 the **PlayTales** app (**Part B**), for what purposes, on what legal basis, who receives it, and
@@ -136,7 +136,9 @@ Apple's own privacy policy additionally applies to Apple's processing.
 ### 5.3 Syncing via iCloud / CloudKit
 
 If you are signed in to iCloud on your device, favourites, recently played albums and playback
-positions are synced via **Apple iCloud (CloudKit)** into your **private** iCloud database so they
+positions — and, for sorting the library, the date you added each favourite and the date each album
+was last listened to — are synced via **Apple iCloud (CloudKit)** into your **private** iCloud
+database so they
 are available on your other devices. The provider has **no access** to that database.
 
 *Purpose:* use across devices.
@@ -231,7 +233,8 @@ Reports*. Switching it off takes effect immediately, not at the next launch.
 
 ### 5.8 Backup and restore
 
-You can export your favourites and history to a file and import them again. This is triggered
+You can export your favourites (with the date you added each one) and your history to a file and
+import them again. This is triggered
 solely by you; the file is saved to the location you choose. The provider does not receive it.
 
 *Legal basis:* Art. 6(1)(b) GDPR.

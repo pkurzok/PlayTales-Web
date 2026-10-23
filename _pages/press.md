@@ -31,7 +31,7 @@ sheet as a text file.
 | **Current version** | 1.6.0 |
 | **First released** | 4 January 2024 |
 | **Platforms** | iPhone, iPad, CarPlay |
-| **System requirement** | iOS 18.0 or later (version 1.5.0 still ran on iOS 17.0) |
+| **System requirement** | iOS 17.0 or later |
 | **Languages** | English, German |
 | **Age rating** | 4+ |
 | **App Store** | [apps.apple.com/us/app/id6444850972](https://apps.apple.com/us/app/id6444850972) |
@@ -83,8 +83,7 @@ sheet as a text file.
   no advertising ID reaches the service that places it, and no profile is built. "PlayTales Pro"
   removes the card entirely. What is transmitted is set out in the
   [privacy policy]({{ '/privacypolicy/' | relative_url }}).
-* **iOS 18 required** — 1.6.0 needs iOS 18. Devices on iOS 17 keep version 1.5.0 with its full
-  feature set; they simply receive no further updates.
+* **Briefly iOS 18 only** — 1.6.0 needed iOS 18; later versions run on iOS 17 again.
 
 ## New in version 1.5.0
 

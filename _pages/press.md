@@ -28,7 +28,7 @@ sheet as a text file.
 | **Category** | Entertainment (secondary: Music) |
 | **Price** | Free. Optional one-time in-app purchase "PlayTales Pro" at $2.99 — no subscription, Family Sharing enabled |
 | **Requirement** | An Apple Music subscription |
-| **Current version** | 1.6.0 |
+| **Current version** | 1.8.1 |
 | **First released** | 4 January 2024 |
 | **Platforms** | iPhone, iPad, CarPlay |
 | **System requirement** | iOS 17.0 or later |
@@ -63,6 +63,28 @@ sheet as a text file.
 > car, on the train, on holiday. Favourites and playback positions sync through the family's own
 > private iCloud. Parents decide how long their child may listen each day or week, and keep the
 > settings behind a PIN. PlayTales was written by Peter Kurzok, a father of three, originally for his own family.
+
+## New in version 1.8.0
+
+* **Feature requests** — in Settings, parents suggest new features, vote on other people's ideas
+  and comment on them (iOS 18 and later). The board sits in the parents' area, behind the math
+  task or PIN. It asks for no name, e-mail address or account.
+* **Easier to use** — larger tap targets, more precise VoiceOver labels, and a player that stays
+  fully usable at the largest text size.
+* **Smoother** — the offline view is prepared in the background without slowing the interface
+  down.
+
+## New in version 1.7.0
+
+* **Discover new stories** — tap the search field and PlayTales suggests popular audio-play
+  series, and ones similar to your favourites. An empty library gets something to start with
+  straight away, too. The suggestions come from the Apple Music catalogue; which ones are tapped
+  is not tracked.
+* **Landscape and Split View** — PlayTales adapts: iPhone in landscape, Split View and Stage
+  Manager on iPad, and the iPhone Duo.
+* **Easier for everyone** — VoiceOver reads every screen, and Reduce Motion is respected.
+* **iOS 17 again** — after the detour to iOS 18 in version 1.6.0, PlayTales runs on every device
+  with iOS 17 again. Only Spotlight search still needs iOS 18.
 
 ## New in version 1.6.0
 
@@ -106,10 +128,13 @@ sheet as a text file.
 * Big covers instead of lists — tile view or Cover Flow
 * Artist and episode titles read aloud, for children who can't read yet
 * Favourites and recently played, with playback positions down to the second
+* Suggestions for new audio-play series, matched to your favourites
 * Sleep timer and offline playback
 * CarPlay support
 * Parental controls: daily and weekly limits, a PIN or math task, and a switch to turn search off
-* AirPlay and Bluetooth, dark and light mode, VoiceOver and Dynamic Type
+* Landscape, Split View, Stage Manager and iPhone Duo
+* AirPlay and Bluetooth, dark and light mode, VoiceOver, Dynamic Type and Reduce Motion
+* Feature requests: parents suggest new features and vote on them (iOS 18 and later)
 
 **Free versus "PlayTales Pro":** the free version allows three favourites and shows one card at the
 foot of the library pointing to another app. The one-time in-app purchase lifts that limit, unlocks

@@ -21,10 +21,10 @@ Category              Entertainment (secondary: Music)
 Price                 Free. Optional one-time in-app purchase "PlayTales Pro"
                       at $2.99 / £2.99 / 2,99 € — no subscription, Family Sharing enabled.
 Requirement           An Apple Music subscription. Without one the catalogue won't play.
-Current version       1.6.0
+Current version       1.8.1
 First released        4 January 2024
 Platforms             iPhone, iPad, CarPlay
-System requirement    iOS 18.0 or later (version 1.5.0 still ran on iOS 17.0)
+System requirement    iOS 17.0 or later
 Languages             English, German
 Age rating            4+
 App Store             https://apps.apple.com/us/app/id6444850972

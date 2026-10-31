@@ -48,5 +48,16 @@ rm -f "$OUT_DIR/$NAME-Presskit.zip"
 # differ on every build even when nothing changed.
 (cd "$(dirname "$STAGE")" && zip -qrX "$OUT_DIR/$NAME-Presskit.zip" "$NAME-Presskit")
 
+# Cloudflare Pages refuses any single file over 25 MiB, and the deploy then fails on the ZIP alone.
+# 1.10.0's eight motifs brought it to ~24 MiB. If this trips, leave the unframed iPad set out of
+# the bundle (it is on the page anyway) rather than lowering the screenshots' quality.
+LIMIT=$((25 * 1024 * 1024))
+SIZE=$(stat -f %z "$OUT_DIR/$NAME-Presskit.zip")
+if (( SIZE >= LIMIT )); then
+    rm -f "$OUT_DIR/$NAME-Presskit.zip"
+    echo "error: the bundle is $SIZE bytes; Cloudflare Pages accepts at most $LIMIT per file." >&2
+    exit 1
+fi
+
 echo "Wrote $OUT_DIR/$NAME-Presskit.zip ($(du -h "$OUT_DIR/$NAME-Presskit.zip" | cut -f1))"
 unzip -l "$OUT_DIR/$NAME-Presskit.zip" | tail -3

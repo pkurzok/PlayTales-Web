@@ -3,8 +3,8 @@ PLAYTALES — PRESS KIT
 
 PlayTales is an audio play player for children that reaches into the Apple Music
 catalogue. Big cover tiles instead of lists, titles read aloud for children who can't
-read yet, a sleep timer, offline playback for the road, and listening limits for
-parents.
+read yet, a sleep timer, offline playback for the road, and listening limits in minutes or
+episodes for parents.
 
 This kit holds everything needed to cover the app. The current version always lives at
 https://play-tales.app/press/
@@ -21,7 +21,7 @@ Category              Entertainment (secondary: Music)
 Price                 Free. Optional one-time in-app purchase "PlayTales Pro"
                       at $2.99 / £2.99 / 2,99 € — no subscription, Family Sharing enabled.
 Requirement           An Apple Music subscription. Without one the catalogue won't play.
-Current version       1.8.1
+Current version       1.10.0
 First released        4 January 2024
 Platforms             iPhone, iPad, CarPlay
 System requirement    iOS 17.0 or later
@@ -55,7 +55,8 @@ straight away, and it reads artists and episodes aloud for anyone who can't read
 A sleep timer ends the story by itself, and episodes downloaded through Apple Music
 keep playing with no signal at all — in the car, on the train, on holiday. Favourites
 and playback positions sync through the family's own private iCloud. Parents decide how
-long their child may listen each day or week, and keep the settings behind a PIN.
+much their child may listen each day or week — in minutes or in episodes — and keep the
+settings behind a PIN.
 PlayTales was written by Peter Kurzok, a father of three, originally for his own family.
 
 
@@ -91,7 +92,8 @@ The screenshots show cover art from third-party audio productions (among them KI
 and Paw Patrol). That art belongs to its respective rights holders, comes from the
 Apple Music catalogue, and appears here only as an example of a real library. It is
 not part of the app and is not shipped with it. If you would rather not reproduce it,
-screenshot 02 (Player) or the CarPlay view are the safe choices.
+screenshot 03 (Parental controls) shows no cover at all; screenshot 02 (Player) and the
+CarPlay view are the other safe choices.
 
 Apple, the Apple logo, Apple Music, CarPlay, iPhone, iPad, iCloud, Siri and Spotlight
 are trademarks of Apple Inc. PlayTales is an independent project and is not affiliated

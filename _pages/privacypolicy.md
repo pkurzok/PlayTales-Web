@@ -4,7 +4,7 @@ title: Privacy Policy
 include_in_header: false
 ---
 
-**Last updated:** 22 October 2026
+**Last updated:** 30 October 2026
 
 This policy describes what personal data is processed when you use this website (**Part A**) and
 the **PlayTales** app (**Part B**), for what purposes, on what legal basis, who receives it, and
@@ -104,10 +104,14 @@ The following is stored only locally on your device and is **not** transmitted t
 * favourites (saved artists) and recently played albums including playback position,
 * all settings (search, filters, speech output, demo mode, the switches for statistics and crash
   reports),
-* the parental controls: the configured daily and weekly limit, how much has already been listened
-  to today and this week, any release that has been granted (until midnight at the latest), and — if
+* the parental controls: the configured daily and weekly limit (in minutes and/or in episodes), how
+  much has already been listened to today and this week, — only while an episode limit is switched
+  on — the catalog identifiers of the albums started today and this week together with any extra
+  episode a parent granted, any release that has been granted (until midnight at the latest), and — if
   one is set — the parent's PIN. The PIN is **not stored in the clear**: only a salted cryptographic digest (SHA-256) is kept.
   The digits themselves never leave the device and are not retained locally either,
+* the number of albums listened to the end, and the app version and date of the last request for
+  an App Store rating — so the app asks at most once per version and not again within 14 days,
 * the cache for album artwork and for generated speech audio files,
 * the local search index (Spotlight) and in-app tips.
 
@@ -137,7 +141,8 @@ Apple's own privacy policy additionally applies to Apple's processing.
 
 If you are signed in to iCloud on your device, favourites, recently played albums and playback
 positions — and, for sorting the library, the date you added each favourite and the date each album
-was last listened to — are synced via **Apple iCloud (CloudKit)** into your **private** iCloud
+was last listened to, and the date an album was marked played (finished, or marked by hand) — are
+synced via **Apple iCloud (CloudKit)** into your **private** iCloud
 database so they
 are available on your other devices. The provider has **no access** to that database.
 
@@ -184,10 +189,10 @@ with related technical attributes (such as which speech method was used, whether
 active, the number of favourites), the app version originally purchased, and a **device-bound
 identifier** (the *vendor ID* assigned by Apple) that groups the events of one device.
 
-For the parental controls, the only things transmitted are **whether** a daily or weekly limit was
-switched on or off, **which** of the two it was, whether a PIN is set, and that a release was
-used — without saying whether it was for the rest of the day or for a few minutes. The configured duration, the time actually listened to and the PIN itself are **not
-transmitted** — how long a child may listen is a parenting decision, not a technical fact about the
+For the parental controls, the only things transmitted are **whether** a daily or weekly limit — by time
+or by episodes — was switched on or off, **which** one it was, whether a PIN is set, and that a release was
+used — without saying whether it was for the rest of the day or for a few minutes. The configured duration or number, the time actually listened to, which episodes were
+started and the PIN itself are **not transmitted** — how long a child may listen is a parenting decision, not a technical fact about the
 app.
 
 **This identifier is pseudonymous, not anonymous.** It is not linked to a name, an e-mail address
@@ -233,8 +238,8 @@ Reports*. Switching it off takes effect immediately, not at the next launch.
 
 ### 5.8 Backup and restore
 
-You can export your favourites (with the date you added each one) and your history to a file and
-import them again. This is triggered
+You can export your favourites (with the date you added each one), your history and the albums
+marked played to a file and import them again. This is triggered
 solely by you; the file is saved to the location you choose. The provider does not receive it.
 
 *Legal basis:* Art. 6(1)(b) GDPR.

@@ -28,7 +28,7 @@ sheet as a text file.
 | **Category** | Entertainment (secondary: Music) |
 | **Price** | Free. Optional one-time in-app purchase "PlayTales Pro" at $2.99 — no subscription, Family Sharing enabled |
 | **Requirement** | An Apple Music subscription |
-| **Current version** | 1.8.1 |
+| **Current version** | 1.10.0 |
 | **First released** | 4 January 2024 |
 | **Platforms** | iPhone, iPad, CarPlay |
 | **System requirement** | iOS 17.0 or later |
@@ -61,8 +61,26 @@ sheet as a text file.
 > reads artists and episodes aloud for anyone who can't read yet. A sleep timer ends the story by
 > itself, and episodes downloaded through Apple Music keep playing with no signal at all — in the
 > car, on the train, on holiday. Favourites and playback positions sync through the family's own
-> private iCloud. Parents decide how long their child may listen each day or week, and keep the
-> settings behind a PIN. PlayTales was written by Peter Kurzok, a father of three, originally for his own family.
+> private iCloud. Parents decide how much their child may listen each day or week — in minutes or
+> in episodes — and keep the settings behind a PIN. PlayTales was written by Peter Kurzok, a father of three, originally for his own family.
+
+## New in version 1.10.0
+
+* **Episodes, not minutes** — parental controls can now limit listening to a number of episodes
+  per day or week, alongside or instead of the time limit. An episode counts once it starts;
+  carrying on with it costs nothing. "Parents: one more episode" grants an extra one. Which
+  episodes were started stays on the device.
+* **Played episodes** — episodes a child finishes get a checkmark on their cover. The sort menu can
+  hide them, and pressing and holding a cover marks one by hand. The mark travels to the family's
+  other devices through their private iCloud. Parents asked for it on the feature-request board.
+* **"Next album" follows the sort order** — sorted by episode, episode 5 is now really followed by
+  episode 6.
+
+## New in version 1.9.0
+
+* **Sort by episode** — a series' albums can be ordered by episode, release date, title or last
+  played, and each series remembers its own order. Favourites sort by name, date added or last
+  played. CarPlay follows the choice.
 
 ## New in version 1.8.0
 
@@ -128,10 +146,13 @@ sheet as a text file.
 * Big covers instead of lists — tile view or Cover Flow
 * Artist and episode titles read aloud, for children who can't read yet
 * Favourites and recently played, with playback positions down to the second
+* Sort by episode, release date, title or last played
+* Played episodes marked with a checkmark, and hidden on request
 * Suggestions for new audio-play series, matched to your favourites
 * Sleep timer and offline playback
 * CarPlay support
-* Parental controls: daily and weekly limits, a PIN or math task, and a switch to turn search off
+* Parental controls: daily and weekly limits in minutes or episodes, a PIN or math task, and a
+  switch to turn search off
 * Landscape, Split View, Stage Manager and iPhone Duo
 * AirPlay and Bluetooth, dark and light mode, VoiceOver, Dynamic Type and Reduce Motion
 * Feature requests: parents suggest new features and vote on them (iOS 18 and later)
@@ -162,10 +183,12 @@ Framed and captioned, exactly as in the App Store. 1320 × 2868 px.
 
 [![Library and favourites](/assets/store-screenshots/iPhone/01-Library.jpg){: width="180" }](/assets/store-screenshots/iPhone/01-Library.jpg)
 [![The player](/assets/store-screenshots/iPhone/02-Player.jpg){: width="180" }](/assets/store-screenshots/iPhone/02-Player.jpg)
-[![Listening offline](/assets/store-screenshots/iPhone/03-Offline.jpg){: width="180" }](/assets/store-screenshots/iPhone/03-Offline.jpg)
-[![Sleep timer](/assets/store-screenshots/iPhone/04-SleepTimer.jpg){: width="180" }](/assets/store-screenshots/iPhone/04-SleepTimer.jpg)
-[![Searching the Apple Music catalogue](/assets/store-screenshots/iPhone/05-Search.jpg){: width="180" }](/assets/store-screenshots/iPhone/05-Search.jpg)
-[![CarPlay](/assets/store-screenshots/iPhone/06-CarPlay.jpg){: width="180" }](/assets/store-screenshots/iPhone/06-CarPlay.jpg)
+[![Parental controls: minutes or episodes](/assets/store-screenshots/iPhone/03-Limits.jpg){: width="180" }](/assets/store-screenshots/iPhone/03-Limits.jpg)
+[![Sort by episode, hide what's been heard](/assets/store-screenshots/iPhone/04-Sort.jpg){: width="180" }](/assets/store-screenshots/iPhone/04-Sort.jpg)
+[![Listening offline](/assets/store-screenshots/iPhone/05-Offline.jpg){: width="180" }](/assets/store-screenshots/iPhone/05-Offline.jpg)
+[![Sleep timer](/assets/store-screenshots/iPhone/06-SleepTimer.jpg){: width="180" }](/assets/store-screenshots/iPhone/06-SleepTimer.jpg)
+[![Searching the Apple Music catalogue](/assets/store-screenshots/iPhone/07-Search.jpg){: width="180" }](/assets/store-screenshots/iPhone/07-Search.jpg)
+[![CarPlay](/assets/store-screenshots/iPhone/08-CarPlay.jpg){: width="180" }](/assets/store-screenshots/iPhone/08-CarPlay.jpg)
 
 ## Screenshots — iPad
 
@@ -173,10 +196,12 @@ Framed and captioned, exactly as in the App Store. 1320 × 2868 px.
 
 [![Library and favourites on iPad](/assets/store-screenshots/iPad/01-Library.jpg){: width="240" }](/assets/store-screenshots/iPad/01-Library.jpg)
 [![The player on iPad](/assets/store-screenshots/iPad/02-Player.jpg){: width="240" }](/assets/store-screenshots/iPad/02-Player.jpg)
-[![Listening offline on iPad](/assets/store-screenshots/iPad/03-Offline.jpg){: width="240" }](/assets/store-screenshots/iPad/03-Offline.jpg)
-[![Sleep timer on iPad](/assets/store-screenshots/iPad/04-SleepTimer.jpg){: width="240" }](/assets/store-screenshots/iPad/04-SleepTimer.jpg)
-[![Searching the Apple Music catalogue on iPad](/assets/store-screenshots/iPad/05-Search.jpg){: width="240" }](/assets/store-screenshots/iPad/05-Search.jpg)
-[![CarPlay](/assets/store-screenshots/iPad/06-CarPlay.jpg){: width="240" }](/assets/store-screenshots/iPad/06-CarPlay.jpg)
+[![Parental controls: minutes or episodes on iPad](/assets/store-screenshots/iPad/03-Limits.jpg){: width="240" }](/assets/store-screenshots/iPad/03-Limits.jpg)
+[![Sort by episode, hide what's been heard on iPad](/assets/store-screenshots/iPad/04-Sort.jpg){: width="240" }](/assets/store-screenshots/iPad/04-Sort.jpg)
+[![Listening offline on iPad](/assets/store-screenshots/iPad/05-Offline.jpg){: width="240" }](/assets/store-screenshots/iPad/05-Offline.jpg)
+[![Sleep timer on iPad](/assets/store-screenshots/iPad/06-SleepTimer.jpg){: width="240" }](/assets/store-screenshots/iPad/06-SleepTimer.jpg)
+[![Searching the Apple Music catalogue on iPad](/assets/store-screenshots/iPad/07-Search.jpg){: width="240" }](/assets/store-screenshots/iPad/07-Search.jpg)
+[![CarPlay](/assets/store-screenshots/iPad/08-CarPlay.jpg){: width="240" }](/assets/store-screenshots/iPad/08-CarPlay.jpg)
 
 ## Unframed screenshots
 
@@ -185,9 +210,11 @@ layout.
 
 [![Library, unframed](/assets/store-screenshots/unframed/iPhone-01-Library.jpg){: width="140" }](/assets/store-screenshots/unframed/iPhone-01-Library.jpg)
 [![Player, unframed](/assets/store-screenshots/unframed/iPhone-02-Player.jpg){: width="140" }](/assets/store-screenshots/unframed/iPhone-02-Player.jpg)
-[![Offline, unframed](/assets/store-screenshots/unframed/iPhone-03-Offline.jpg){: width="140" }](/assets/store-screenshots/unframed/iPhone-03-Offline.jpg)
-[![Sleep timer, unframed](/assets/store-screenshots/unframed/iPhone-04-SleepTimer.jpg){: width="140" }](/assets/store-screenshots/unframed/iPhone-04-SleepTimer.jpg)
-[![Search, unframed](/assets/store-screenshots/unframed/iPhone-05-Search.jpg){: width="140" }](/assets/store-screenshots/unframed/iPhone-05-Search.jpg)
+[![Parental controls, unframed](/assets/store-screenshots/unframed/iPhone-03-Limits.jpg){: width="140" }](/assets/store-screenshots/unframed/iPhone-03-Limits.jpg)
+[![Sorting, unframed](/assets/store-screenshots/unframed/iPhone-04-Sort.jpg){: width="140" }](/assets/store-screenshots/unframed/iPhone-04-Sort.jpg)
+[![Offline, unframed](/assets/store-screenshots/unframed/iPhone-05-Offline.jpg){: width="140" }](/assets/store-screenshots/unframed/iPhone-05-Offline.jpg)
+[![Sleep timer, unframed](/assets/store-screenshots/unframed/iPhone-06-SleepTimer.jpg){: width="140" }](/assets/store-screenshots/unframed/iPhone-06-SleepTimer.jpg)
+[![Search, unframed](/assets/store-screenshots/unframed/iPhone-07-Search.jpg){: width="140" }](/assets/store-screenshots/unframed/iPhone-07-Search.jpg)
 
 [![CarPlay, unframed](/assets/store-screenshots/unframed/CarPlay.png){: width="420" }](/assets/store-screenshots/unframed/CarPlay.png)
 
@@ -217,8 +244,8 @@ different product.
 The screenshots show cover art from third-party audio productions (among them KIDDINX and Paw
 Patrol). That art belongs to its respective rights holders, comes from the Apple Music catalogue,
 and appears here only as an example of a real library. It is not part of the app and is not shipped
-with it. If you would rather not reproduce it, screenshot 02 (Player) or the CarPlay view are the
-safe choices.
+with it. If you would rather not reproduce it, screenshot 03 (Parental controls) shows no cover at all;
+screenshot 02 (Player) and the CarPlay view are the other safe choices.
 
 Apple, the Apple logo, Apple Music, CarPlay, iPhone, iPad, iCloud, Siri and Spotlight are
 trademarks of Apple Inc. PlayTales is an independent project and is not affiliated with Apple Inc.
